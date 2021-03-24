@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - Contato</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+        <!--Criando menu-->
+        <table border="0" width="100%" class="menu">
+            <tr>
+                <td align="center"><a href="../html/index.html"><img src="../imagens/GAMA.png" width="160" heigh="50"></a>  </td>
+                <td align="right">QUEM SOMOS</td>
+                <td align="right">PARA PESSOAS</td>
+                <td align="right">PARA EMPRESAS</td>
+                <td align="right"><a href="../html/contato.html">CONTATO</a></td>
+                <td align="right">CONTEÚDO</td>
+            </tr>
+        </table>
+
+        <form id="contato" method="POST">
+            <!-- INserindo area no formulario-->
+            <fieldset>
+            <!--Inserindo com a tag legend-->
+                <legend>Preencha os campos do formulário</legend>
+                <label>Nome:</label><input type="text" name="nome" class="campo_nome" required><br><br>
+                <label>E-mail:</label><input type="email" name="email" class="campo_email" required><br><br>
+                <label>Senha: </label><input type="password" name="senha" required><br><br>
+                <label>Gênero: </label>
+                <input type="radio" name="genero" value"Feminino">Feminino
+                <input type="radio" name="genero" value"Masculino">Masculino
+                <input type="radio" name="genero" value"Outros">Outros
+                <br> <br>
+                <label>Escolha o curso</label>
+                <select>
+                    <option name="" value"""></option>
+                    <option name="curso" value"html>Html</option>
+                    <option name="curso" value"java">Java</option>
+                    <option name="curso" value"css">Css</option>
+                </select>
+                <br><br>
+                <label>Escolha o período que deseja fazer o curso</label>
+                <br>
+                <input type="checkbox" name="checkbox" value="Manha">Manhã
+                <input type="checkbox" name="checkbox" value="Tarde">Tarde
+                <input type="checkbox" name="checkbox" value="Noite">Noite
+                <br><br>
+                <label>Escolha a data  curso</label>
+                <br><br>
+                <input type="date" name="date">
+                <br><br>
+                <label>Menssagem:</label><br>
+                <textarea cols="35" row="4" name="mensagem"></textarea>
+                <br><br>
+                <label>Por favor envie um arquivo</label>
+                <input type="file">
+                <br><br>
+                 <!--Criando botão para envio dos dados-->
+                <input type="submit" value="Enviar">
+            </fieldset>
+
+
+        </form>
+</body>
+</html>
